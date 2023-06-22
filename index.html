@@ -153,12 +153,11 @@
                     </form>
                 </div>
                 <div id="updateModal" class="container modal fade" tabIndex="-1">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class='header m-2 modal-content'><span class="row border-bottom border-3 p-1 close">Update An Existing Observation:</span></h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            </div>
-                        </div>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class='header m-2 modal-content'><span class="row border-bottom border-3 p-1 close">Update An Existing Observation:</span></h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>                        
                         <div class='modal-body bg-light observationUpdateForm m-4'>
                             <form id="updateForm">
                                 <div class="row align-items-end g-3 fs-4">
@@ -167,105 +166,106 @@
                                         <input type="text" class="form-control" id="updateId" placeholder="Observation ID from Field Notes" required/>        
                                     </div>
                                 </div>
-                            <div class="row align-items-end g-3">
-                                <div class="col-md-8">
+                                <div class="row align-items-end g-3">
+                                    <div class="col-md-8">
+                                        <label class="mt-2 mb-2 fw-bold" for="updateObservation">Name of Animal or Insect:</label>
+                                        <input type="text" class="form-control fs-5" id="udpateObservation" placeholder="Name of Animal or Insect" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
                                     <label class="mt-2 mb-2 fw-bold" for="updateObservation">Name of Animal or Insect:</label>
                                     <input type="text" class="form-control fs-5" id="udpateObservation" placeholder="Name of Animal or Insect" />
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <label class="mt-2 mb-2 fw-bold" for="updateObservation">Name of Animal or Insect:</label>
-                                <input type="text" class="form-control fs-5" id="udpateObservation" placeholder="Name of Animal or Insect" />
-                            </div>
-                            <div>
-                                <label class="mt-2 mb-2 fw-bold">Classifcation: </label><br>
-                                <label class="radio fs-5">
-                                    <input class="m-2" id="button1" type="radio" name="classoptradio" value="Mammal" checked /> Mammal
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-2" id="button2" type="radio" name="classoptradio" value="Reptile" /> Reptile
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-2" id="button3" type="radio" name="classoptradio" value="Amphibian" /> Amphibian
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-2" id="button4" type="radio" name="classoptradio" value="Bird" /> Bird
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-2" id="button5" type="radio" name="classoptradio" value="Bug, Insect or Spider" /> Bug, Insect or Spider
-                                </label>
-                           </div>
-                            <div class="col-md-6">
-                                <label class="mt-2 mb-2 fw-bold" for="updateLocation">Location Observed:</label>
-                                <input type="text" class="form-control"  id="updateLocation" placeholder="City, State"/>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="mt-3 mb-2 fw-bold">Type of Location: </label><br>
-                                <label class="radio fs-5">
-                                    <input class="m-1" id="radioButton1" type="radio" name="locationoptradio" value="Desert" checked /> Desert
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-1" id="radioButton2" type="radio" name="locationoptradio" value="Field or Meadow" /> Field or Meadow
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-1" id="radioButton3" type="radio" name="locationoptradio" value="Forest or Woods" /> Forest or Woods
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-1" id="radioButton4" type="radio" name="locationoptradio" value="Hill or Mountain" /> Hill or Mountain
-                                </label>
-                                <label class="radio fs-5">
+                                <div>
+                                    <label class="mt-2 mb-2 fw-bold">Classifcation: </label><br>
+                                    <label class="radio fs-5">
+                                        <input class="m-2" id="button1" type="radio" name="classoptradio" value="Mammal" checked /> Mammal
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-2" id="button2" type="radio" name="classoptradio" value="Reptile" /> Reptile
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-2" id="button3" type="radio" name="classoptradio" value="Amphibian" /> Amphibian
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-2" id="button4" type="radio" name="classoptradio" value="Bird" /> Bird
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-2" id="button5" type="radio" name="classoptradio" value="Bug, Insect or Spider" /> Bug, Insect or Spider
+                                    </label>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="mt-2 mb-2 fw-bold" for="updateLocation">Location Observed:</label>
+                                    <input type="text" class="form-control"  id="updateLocation" placeholder="City, State"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="mt-3 mb-2 fw-bold">Type of Location: </label><br>
+                                    <label class="radio fs-5">
+                                        <input class="m-1" id="radioButton1" type="radio" name="locationoptradio" value="Desert" checked /> Desert
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-1" id="radioButton2" type="radio" name="locationoptradio" value="Field or Meadow" /> Field or Meadow
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-1" id="radioButton3" type="radio" name="locationoptradio" value="Forest or Woods" /> Forest or Woods
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-1" id="radioButton4" type="radio" name="locationoptradio" value="Hill or Mountain" /> Hill or Mountain
+                                    </label>
+                                    <label class="radio fs-5">
                                     <input class="m-2" id="radioButton5" type="radio" name="locationoptradio" value="Pond, Lake, or River" /> Pond, Lake, or River
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-2" id="radioButton6" type="radio" name="locationoptradio" value="Ocean" /> Ocean
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-1" id="radioButton7" type="radio" name="locationoptradio" value="Beach" /> Beach
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-1" id="radioButton8" type="radio" name="locationoptradio" value="Sky" /> Sky
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-1" id="radioButton9" type="radio" name="locationoptradio" value="Neighborhood or City" /> Neighborhood or City 
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-1" id="radioButton10" type="radio" name="locationoptradio"  value="State or National Park" /> State or National Park
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-1" id="radioButton11" type="radio" name="locationoptradio" value="Zoological Society" /> Zoological Society
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-2" id="radioButton11" type="radio" name="locationoptradio" value="Other" /> Other 
-                                    <!-- <input type="text" class="form fs-6 fst-italic" id="newLocation" placeholder="Describe Location"/> -->
-                                </label>
-                            </div>
-                            <div class="col-md-4">
-                                <label class="mt-2 mb-2 fw-bolder" for="updateDate">Observation Date:</label>
-                                <input class="form-control" id="updateDate" type="Date" />
-                            </div>
-                            <div class="col-md-4">
-                                <label class="mt-2 mb-2 fw-bold">Time of Day: </label><br>
-                                <label class="radio fs-5">
-                                    <input class="m-2" id="daybutton1" type="radio" name="timeoptradio" value="Morning" checked /> Morning
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-2" id="daybutton2" type="radio" name="timeoptradio" value="Day" /> Day
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-2" id="daybutton3" type="radio" name="timeoptradio" value="Evening" /> Evening
-                                </label>
-                                <label class="radio fs-5">
-                                    <input class="m-2" id="daybutton4" type="radio" name="timeoptradio" value="Night" /> Night
-                                </label>
-                           </div>                        
-                            <div class="modal-footer">
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-2" id="radioButton6" type="radio" name="locationoptradio" value="Ocean" /> Ocean
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-1" id="radioButton7" type="radio" name="locationoptradio" value="Beach" /> Beach
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-1" id="radioButton8" type="radio" name="locationoptradio" value="Sky" /> Sky
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-1" id="radioButton9" type="radio" name="locationoptradio" value="Neighborhood or City" /> Neighborhood or City 
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-1" id="radioButton10" type="radio" name="locationoptradio"  value="State or National Park" /> State or National Park
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-1" id="radioButton11" type="radio" name="locationoptradio" value="Zoological Society" /> Zoological Society
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-2" id="radioButton11" type="radio" name="locationoptradio" value="Other" /> Other 
+                                        <!-- <input type="text" class="form fs-6 fst-italic" id="newLocation" placeholder="Describe Location"/> -->
+                                    </label>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="mt-2 mb-2 fw-bolder" for="updateDate">Observation Date:</label>
+                                    <input class="form-control" id="updateDate" type="Date" />
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="mt-2 mb-2 fw-bold">Time of Day: </label><br>
+                                    <label class="radio fs-5">
+                                        <input class="m-2" id="daybutton1" type="radio" name="timeoptradio" value="Morning" checked /> Morning
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-2" id="daybutton2" type="radio" name="timeoptradio" value="Day" /> Day
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-2" id="daybutton3" type="radio" name="timeoptradio" value="Evening" /> Evening
+                                    </label>
+                                    <label class="radio fs-5">
+                                        <input class="m-2" id="daybutton4" type="radio" name="timeoptradio" value="Night" /> Night
+                                    </label>
+                                </div>                        
+                                <div class="modal-footer">
                                 <button class='btn btn-sm new-btn border border-3 rounded-pill ms-4 mb-4 p-2.5 fw-bolder text-white fs-5' onclick="updateObservation()" id="updateObservation">Update Your Field Note</button>
-                            </div>
+                                </div>                                
                             </form>
                         </div>
-                    </div>      
-                </div>
-            </div>
+                    </div>
+                </div>      
+        </div>
+    </div>
     
     <!-- Is there a way to have the table automatically sort by the deadline date? Also, want to see if you can make the completed option a button that updates rather than updating the whole form... then put completed projects lower on the list and italics. HTML SYMBOLS: https://www.toptal.com/designers/htmlarrows/symbols/ -->
     

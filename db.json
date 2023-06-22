@@ -26,6 +26,24 @@
       "date": "2023-06-22",
       "timeOfDay": "Day",
       "id": 5
+    },
+    {
+      "observationName": "Rabbit",
+      "classification": "Mammal",
+      "location": "Moorpark, CA",
+      "locationType": "Field or Meadow",
+      "date": "2023-06-21",
+      "timeOfDay": "Day",
+      "id": 6
+    },
+    {
+      "observationName": "Lizard",
+      "classification": "Reptile",
+      "location": "Simi Valley, CA",
+      "locationType": "Neighborhood or City",
+      "date": "2023-06-22",
+      "timeOfDay": "Day",
+      "id": 7
     }
   ]
 }
