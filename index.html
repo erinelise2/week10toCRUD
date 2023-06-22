@@ -143,7 +143,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h3 class='header m-2 modal-content'><span class="row border-bottom border-3 p-1 close">Update An Existing Observation:</span></h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             </div>
                         </div>
                         <div class='modal-body bg-light observationUpdateForm m-4'>
@@ -223,20 +223,20 @@
                             <div class="col-md-4">
                                 <label class="mt-2 mb-2 fw-bold">Time of Day: </label><br>
                                 <label class="radio">
-                                    <input class="me-0.25" id="daybutton1" type="radio" name="updatetimeoptradio" value="Morning" checked /> Morning
+                                    <input class="me-0.25" id="daybutton1" type="radio" name="timeoptradio" value="Morning" checked /> Morning
                                 </label><br>
                                 <label class="radio">
-                                    <input class="me-0.25" id="daybutton2" type="radio" name="updatetimeoptradio" value="Day" /> Day
+                                    <input class="me-0.25" id="daybutton2" type="radio" name="timeoptradio" value="Day" /> Day
                                 </label><br>
                                 <label class="radio">
-                                    <input class="me-0.25" id="daybutton3" type="radio" name="updatetimeoptradio" value="Evening" /> Evening
+                                    <input class="me-0.25" id="daybutton3" type="radio" name="timeoptradio" value="Evening" /> Evening
                                 </label><br>
                                 <label class="radio">
-                                    <input class="me-0.25" id="daybutton4" type="radio" name="updatetimeoptradio" value="Night" /> Night
+                                    <input class="me-0.25" id="daybutton4" type="radio" name="timeoptradio" value="Night" /> Night
                                 </label><br>
                            </div>
                         </div>
-                            <div class="updateButton-class">
+                            <div class="modal-footer">
                             <button class='btn btn-sm new-btn border border-3 rounded-pill m-4 p-2.5 fw-bold text-white fs-5' onclick="updateObservation()" id="updateObservation">Update Your Field Note</button>
                             </div>
                     </div>
