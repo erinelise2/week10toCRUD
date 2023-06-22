@@ -1,13 +1,22 @@
 {
   "fieldNotes": [
     {
+      "observationName": "Coyote",
+      "classification": "Mammal",
+      "location": "Simi Valley, CA",
+      "locationType": "State or National Park",
+      "date": "2023-06-22",
+      "timeOfDay": "Morning",
+      "id": 3
+    },
+    {
       "observationName": "Rattlesnake",
       "classification": "Reptile",
       "location": "Simi Valley, CA",
-      "locationType": "State Park",
-      "date": "2023-06-14",
+      "locationType": "Field or Meadow",
+      "date": "",
       "timeOfDay": "Morning",
-      "id": 2
+      "id": 4
     }
   ]
 }
