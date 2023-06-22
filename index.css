@@ -1,8 +1,18 @@
 body {
-    background-color: rgb(18, 111, 64);
+    background: #347764;
+    background: linear-gradient(#226f19, #9c864a, #226f19, #3c8b56);
+    border-radius: 8px;
+    padding: 9px;
+    box-sizing: border-box;
     font-family: 'Shadows Into Light', cursive;
     letter-spacing: 0.5pt;
     color: white;
+    /* border: 1px solid #112b24; */
+    text-shadow: 1px 1px 1px #38BA96;
+}
+
+.mainHeader {
+    font-size: 45pt;
 }
 
 /* The Modal (background) */

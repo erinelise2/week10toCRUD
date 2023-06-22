@@ -14,9 +14,18 @@
       "classification": "Reptile",
       "location": "Simi Valley, CA",
       "locationType": "Field or Meadow",
-      "date": "",
+      "date": "2023-06-08",
       "timeOfDay": "Morning",
       "id": 4
+    },
+    {
+      "observationName": "Hummingbird",
+      "classification": "Bird",
+      "location": "Simi Valley, CA",
+      "locationType": "Other",
+      "date": "2023-06-22",
+      "timeOfDay": "Day",
+      "id": 5
     }
   ]
 }
